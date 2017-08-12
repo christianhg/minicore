@@ -1,6 +1,6 @@
-import { compute } from '../../core';
+import { compute } from '../../core'
 
-export const add = (a: number) => (b: number) => a + b;
+export const add = (a: number) => (b: number) => a + b
 
 console.log('adding:', compute(1, add(2)))
 

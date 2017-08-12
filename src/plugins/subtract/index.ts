@@ -1,5 +1,5 @@
-import { compute } from '../../core';
+import { compute } from '../../core'
 
-export const subtract = (a: number) => (b: number) => b - a;
+export const subtract = (a: number) => (b: number) => b - a
 
-console.log('subtracting:', compute(10, subtract(5)));
+console.log('subtracting:', compute(10, subtract(5)))

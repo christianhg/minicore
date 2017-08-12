@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 
 module.exports = {
   devServer: {
@@ -27,10 +27,8 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin()
-  ],
+  plugins: [new HtmlWebpackPlugin()],
   resolve: {
     extensions: ['.js', '.ts']
   }
-};
+}
