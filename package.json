@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "dev-commons": "webpack-dev-server --config webpack.config.commons.js",
+    "dist-commons": "webpack --config webpack.config.commons.js",
     "dev-naive": "webpack-dev-server --config webpack.config.naive.js",
     "dist-naive": "webpack --config webpack.config.naive.js"
   },
