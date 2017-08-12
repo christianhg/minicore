@@ -3,7 +3,7 @@ const path = require('path')
 
 module.exports = {
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'dist-naive'),
     port: '8000'
   },
   entry: {
@@ -12,7 +12,7 @@ module.exports = {
     subtract: './src/plugins/subtract/index.ts'
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist-naive'),
     filename: '[name].js'
   },
   module: {

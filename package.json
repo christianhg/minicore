@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "predist": "rm -rf dist",
-    "dev": "webpack-dev-server",
-    "dist": "webpack"
+    "dev-naive": "webpack-dev-server --config webpack.config.naive.js",
+    "dist-naive": "webpack --config webpack.config.naive.js"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.2",
