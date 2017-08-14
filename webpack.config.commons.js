@@ -11,6 +11,7 @@ module.exports = {
   entry: {
     core: './src/core/index.ts',
     add: './src/plugins/add/index.ts',
+    foo: './src/plugins/foo/index.ts',
     subtract: './src/plugins/subtract/index.ts'
   },
   output: {

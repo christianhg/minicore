@@ -1,7 +1,7 @@
 import { compute } from '../../core/compute'
 import { curry } from '../../core/curry'
 
-const add = curry((a: number, b: number) => a + b)
+export const add = curry((a: number, b: number) => a + b)
 
 console.log('adding:', compute(1, add(2)))
 
