@@ -1,4 +1,3 @@
-const BundleBuddyWebpackPlugin = require('bundle-buddy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
@@ -31,7 +30,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new BundleBuddyWebpackPlugin(),
     new HtmlWebpackPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'core',

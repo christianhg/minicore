@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "analyse-commons": "bundle-buddy dist-commons/*.map",
+    "analyse-naive": "bundle-buddy dist-naive/*.map",
     "dev-commons": "webpack-dev-server --config webpack.config.commons.js",
     "dist-commons": "webpack --config webpack.config.commons.js",
     "dev-naive": "webpack-dev-server --config webpack.config.naive.js",
@@ -8,7 +10,7 @@
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.2",
-    "bundle-buddy-webpack-plugin": "^0.3.0",
+    "bundle-buddy": "^0.1.2",
     "html-webpack-plugin": "^2.30.1",
     "prettier": "^1.5.3",
     "typescript": "^2.4.2",
