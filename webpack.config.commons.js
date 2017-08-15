@@ -33,8 +33,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'core',
-      filename: 'core.js'
+      name: 'core'
     })
   ],
   resolve: {
