@@ -3,9 +3,9 @@
     "analyse-commons": "npm run dist-commons && bundle-buddy dist-commons/*.map",
     "analyse-naive": "npm run dist-naive && bundle-buddy dist-naive/*.map",
     "dev-commons": "webpack-dev-server --config webpack.config.commons.js",
-    "dist-commons": "webpack --config webpack.config.commons.js",
+    "dist-commons": "webpack -p --config webpack.config.commons.js",
     "dev-naive": "webpack-dev-server --config webpack.config.naive.js",
-    "dist-naive": "webpack --config webpack.config.naive.js",
+    "dist-naive": "webpack -p --config webpack.config.naive.js",
     "prettier": "prettier --write --single-quote --no-semi \"{*,src/**/*}.{js,ts}\""
   },
   "devDependencies": {
