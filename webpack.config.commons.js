@@ -10,10 +10,12 @@ module.exports = {
   devtool: 'source-map',
   entry: {
     core: './src/core/index.ts',
-    add: './src/plugins/add/index.ts',
-    bar: './src/plugins/bar/index.ts',
-    foo: './src/plugins/foo/index.ts',
-    subtract: './src/plugins/subtract/index.ts'
+    plugins: [
+      './src/plugins/add/index.ts',
+      './src/plugins/bar/index.ts',
+      './src/plugins/foo/index.ts',
+      './src/plugins/subtract/index.ts'
+    ]
   },
   output: {
     path: path.resolve(__dirname, 'dist-commons'),
