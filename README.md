@@ -20,6 +20,22 @@ src
     └── subtract (imports from core)
 ```
 
+* The naive, plain solution is in `webpack.config.naive.js`.
+* The desired solution is in `webpack.config.commons.js`.
+
+## Useful commands:
+
+Distribute and analyse the compact version of the naive build:
+
+```
+npm run analyse-naive-compact
+```
+
+Distribute and analyse the compact version of the desired build:
+
+```
+npm run analyse-commons-compact
+```
 
 ## Useful links
 
