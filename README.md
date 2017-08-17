@@ -23,7 +23,20 @@ src
 * The naive, plain solution is in `webpack.config.naive.js`.
 * The desired solution is in `webpack.config.commons.js`.
 
-## Useful commands:
+## Desired output
+
+Every entry should be given it's own output and no duplication should exist in any of them:
+
+```
+dist
+├── core.js
+├── add.js
+├── bar.js
+├── foo.js
+└── subtract.js
+```
+
+## Useful commands
 
 Distribute and analyse the compact version of the naive build:
 
