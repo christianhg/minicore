@@ -1,5 +1,26 @@
 # minicore
 
+The goal of this repository is to figure out how to build an app with webpack that has the following proporties:
+
+* There exists a common core.
+* There exists a number of plugins that all can import functionality from the core.
+* The plugins can also import functionality from each other.
+* The core resides in `./src/core` and the plugins reside in `./src/plugins/**`.
+* The core and each plugin should be outputted as its own bundle with no duplication, i.e. their bundle should only inlide their own code.
+
+```
+src
+├── core
+│   ├── compute
+│   └── curry
+└── plugins
+    ├── add (imports from core)
+    ├── bar (imports from foo)
+    ├── foo (imports from core as well as add and subtract)
+    └── subtract (imports from core)
+```
+
+
 ## Useful links
 
 * [Bundle Buddy 🔧](https://github.com/samccone/bundle-buddy)
