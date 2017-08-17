@@ -23,7 +23,7 @@ src
 * The naive, plain solution is in `webpack.config.naive.js`.
 * The desired solution is in `webpack.config.commons.js`.
 
-## Desired output
+### Desired output
 
 Every entry should be given it's own output and no duplication should exist in any of them:
 
